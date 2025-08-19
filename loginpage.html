@@ -5,8 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
     <link rel="icon" type="image/x-icon" href="WhatsApp Image 2025-08-15 at 23.27.51.jpeg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
     <style>
         /* General body styles */
+            .btn 
+{
+  display: inline-block;
+  width: 150px;
+  height: 50px;
+  background: pink;
+  margin: 5px;
+  text-align: center;
+  line-height: 50px;
+
+      border-radius: 8px;
+      cursor: pointer; /* shows hand pointer */
+      box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+      transition: all 0.3s ease;
+    }
+
+    /* Hover effect */
+    .btn:hover {
+      box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+      transform: translateY(-3px); /* “lift” up */
+    }
+
+    /* Click (active) effect */
+    .btn:active {
+      box-shadow: 0 3px 8px rgba(0,0,0,0.5);
+      transform: translateY(2px); /* “press down” */
+    }
+
         body {
             margin: 0;
             padding: 0;
@@ -81,7 +111,14 @@
         <label for="password">Password</label>
         <input type="password" id="password" name="password" placeholder="Enter your password" required>
 
-        <input type="submit" value="Submit">
+         <button class="btn">Submit</button>
+         <i class="fab fa-facebook"></i>
+<i class="fab fa-twitter"></i>
+<i class="fab fa-instagram"></i>
+<i class="fab fa-linkedin"></i>
+<i class="fab fa-github"></i>
+
+
     </form>
 </body>
 </html>
