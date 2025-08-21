@@ -20,6 +20,15 @@ class Practice{
         else{
             System.out.println("IM DONE GUYSS");
         }
-
+     Scanner sc = new Scanner(System.in);
+     
+     System.out.println("Tell me your name: ");
+     String name= sc.next();
+     System.out.println("Your name is really " + name + "? Wow, thats lovely");
+     System.out.println("tell me ur age: ");
+     int age= sc.nextInt();
+     
+     System.out.println("ur age is " + age);
+     
     }
 }
