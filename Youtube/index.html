@@ -1,11 +1,82 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>ShaduTube</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShaduTube</title>
+  <link rel="icon" type="image/x-icon" href="YouTube_full-color_icon_(2017).svg.webp">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <style>
+    .fab.fa-youtube { 
+      color: red;  
+    }
+    .yt { 
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 8px;
+    }
+    .hee {
+      background-color: aliceblue;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 8px 12px;
+      cursor: pointer;
+      box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+      transition: all 0.2s ease;
+    }
+    .hee:hover {
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.4);
+    }
+    .haa {
+      display: flex;
+      align-items: center;
+      border: 1px solid whitesmoke;
+      border-radius: 20px;
+      background: lightgrey;
+    }
+    .haa i {
+      padding: 8px;
+      color: gray;
+    }
+    .haa input {
+      border: none;
+      outline: none;
+      padding: 8px;
+      font-size: 14px;
+      width: 250px;
+      background-color: lightgray;
+    }
+    img{
+        width:20px;
+        height:20px;
+        border-radius: 25px;
+    }
+    body {
+      background-color: lightgrey;
+      margin: 0;
+    }
+  </style>
 </head>
 <body>
-    <h1>fr</h1>
+  <header>
+    <div class="hee">  
+      <div class="yt">
+        <i class="fas fa-bars"></i>
+        <i class="fab fa-youtube"></i>
+        <p>ShaduTube</p>
+      </div>
+      <div class="haa">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search">
+      </div>
+      <div>
+        <i class="fas fa-upload"></i>
+        <img src="WhatsApp Image 2025-08-22 at 18.36.35.jpeg">
+
+      </div>
+    </div>
+  </header>
 </body>
 </html>
