@@ -6,6 +6,8 @@
   <title>ShaduTube</title>
   <link rel="icon" type="image/x-icon" href="YouTube_full-color_icon_(2017).svg.webp">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
   <style>
     .fab.fa-youtube { 
       color: red;  
@@ -17,7 +19,7 @@
       gap: 8px;
     }
     .hee {
-      background-color: aliceblue;
+      background-color: #f8f8f8;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -39,6 +41,7 @@
     .haa i {
       padding: 8px;
       color: gray;
+      padding-right: 100px;
     }
     .haa input {
       border: none;
@@ -47,36 +50,363 @@
       font-size: 14px;
       width: 250px;
       background-color: lightgray;
+      padding-right: 100px;
     }
-    img{
-        width:20px;
-        height:20px;
-        border-radius: 25px;
+img, .haa img { 
+    width: 20px; 
+    height: 20px; 
+    border-radius: 25px; 
+}
+
+    
+    .um i{
+        width: 30px;
+        font-size: 20px;
+        align-items: center;
     }
+        .un i{
+        width: 15px;
+        font-size: 15px;
+    }
+li{
+    list-style: none;
+}
     body {
-      background-color: lightgrey;
+      background-color: lightgray;
       margin: 0;
     }
+    .fas.fa-fire   {
+  color: firebrick;
+    }
+    .fas.fa-home   {
+  color: black;
+    }
+    .fas.fa-play-circle  {
+  color: black;
+    }
+    .fas.fa-history  {
+  color: black;
+    }
+    .fas.fa-clock   {
+  color: black;
+    }
+    .fas.fa-thumbs-up   {
+  color: black;
+    }
+    .fas.fa-tag   {
+  color: black;
+    }
+    .fas.fa-video   {
+  color: black;
+    }
+    .pp{
+        padding-left: 40px;
+    }
+    .imgg{
+        width:280px;
+        height:183px
+
+    }
+    .content{
+        display: flex;
+        gap: 15px;
+        background-color: #eaeaea;
+        
+    }
+
+aside ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;       /* space between icon and text */
+  color:black;    /* your text color */
+  padding: 8px 0;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+aside ul li img {
+  width: 20px; 
+  height: 20px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+
+    
+.video-card {
+  width: 22%;       
+  margin: 1%;     
+  display: inline-block;
+  vertical-align: top;
+}
+.video-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px; 
+  display: block;
+}
+.video-card p{
+    font-size: 12px;
+    color: gray;
+    margin: 2px 0 0 0;
+}
+.video-card h4{
+    font-size: 14px;
+    margin: 4px 0 2px 0;
+}
+
+.video-card .channel-img {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.video-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+main{
+    background-color: #eaeaea;
+    cursor: pointer;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.2);
+    transition: all 0.2s ease;
+}
+main:hover{
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.4);
+    transform: scale(1.0);
+}
+
+
+footer {
+  background: #111;        /* dark professional background */
+  color: #aaa;
+  text-align: center;
+  padding: 20px 0;
+  font-size: 14px;
+}
+
+footer p {
+  margin-bottom: 10px;
+  font-size: 13px;
+}
+
+footer .social-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;               /* spacing between icons */
+}
+
+footer .social-links a {
+  color: #aaa;             /* neutral gray */
+  font-size: 20px;         /* size of icons */
+  transition: color 0.3s;
+}
+
+footer .social-links a:hover {
+  color: #fff;             /* subtle hover effect */
+}
+
+
   </style>
 </head>
 <body>
+    <!--header-->
   <header>
     <div class="hee">  
       <div class="yt">
         <i class="fas fa-bars"></i>
         <i class="fab fa-youtube"></i>
-        <p>ShaduTube</p>
+        <p style="font-size: larger; font-family: roboto;">ShaduTube</p>
       </div>
       <div class="haa">
         <i class="fas fa-search"></i>
         <input type="text" placeholder="Search">
       </div>
-      <div>
+      <div class="um">
         <i class="fas fa-upload"></i>
         <img src="WhatsApp Image 2025-08-22 at 18.36.35.jpeg">
-
       </div>
     </div>
   </header>
+
+<!--side bar-->
+<div class="un content">
+   <aside>
+    <ul><li><i class="fas fa-home"></i> Home</li></ul>
+    <ul><li><i class="fas fa-fire" ></i> Trending</li></ul>
+    <ul><li><i class="fas fa-play-circle"></i> Subscription</li></ul>
+    <p class="pp">Library</p>
+    <ul><li><i class="fas fa-history"></i> History</li></ul> 
+    <ul><li><i class="fas fa-clock"></i> Watch Later</li></ul>
+    <ul><li><i class="fas fa-thumbs-up"></i> Liked Videos</li></ul>
+    <ul><li><i class="fas fa-tag"></i> Purchase</li></ul>
+    <ul><li><i class="fas fa-video"></i> Your Videos</li></ul>
+    <p class="pp">Subscriptions</p>
+    <ul>
+    <li><img src="WhatsApp Image 2025-08-22 at 18.36.35.jpeg" alt=""> Shadilvlog</li>
+    <li><img src="WhatsApp Image 2025-08-22 at 18.36.35.jpeg" alt=""> Cekoock</li>
+    <li><img src="WhatsApp Image 2025-08-22 at 18.36.35.jpeg"> Layecko</li>
+    <li><img src="WhatsApp Image 2025-08-22 at 18.36.35.jpeg"> Mayonnise</li>
+    <li><img src="WhatsApp Image 2025-08-22 at 18.36.35.jpeg"> owoah</li></ul>
+   </aside>
+
+   <main>
+    <div class="video-grid">
+<div class="video-card">
+        <img class="video-card img" src="Black and Dark Space Photo YouTube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="5771416d-ceb6-4378-aacc-d75fd5a81380.jpeg">
+            <div>
+        <h4>Dreams |Episode 56 | #Viral</h4>
+        <p>Motive Channel • 1M views • 2 days ago</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img src="Black and Yellow Modern Simple Racing Game Live Streaming Gaming YouTube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="Black and Yellow Modern Simple Racing Game Live Streaming Gaming YouTube Thumbnail.png">
+            <div>
+        <h4>GTA GAME LIVESTREAM </h4>
+        <p>Gamezz • 2M views • 5 days ago</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img src="Blue and Yellow Meme Review YouTube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="Blue and Yellow Meme Review YouTube Thumbnail.png">
+            <div>
+        <h4>MEME TALKS |Episode 36</h4>
+        <p>MEME YOYO • 10M views • 9 days ago</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img src="Green Passive Income Ideas YouTube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="WhatsApp Image 2025-08-22 at 18.36.34 (1).jpeg">
+            <div>
+        <h4>PASSIVE INCOME | Class 2</h4>
+        <p>Money Talks • 7M views • 1 day ago</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img src="Yellow And Red Unboxing And Review YouTube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="WhatsApp Image 2025-08-22 at 18.36.34 (1).jpeg">
+            <div>
+        <h4>Unboxing & Review #viral</h4>
+        <p>Money Talks • 500k views • 1 day ago</p>
+        </div>
+        </div>
+    </div>
+
+
+    <div class="video-card">
+        <img src="White and Brown India National Parks Travel Youtube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="WhatsApp Image 2025-08-22 at 18.39.34.jpeg">
+            <div>
+        <h4>MY DAYS IN KERALA #KL</h4>
+        <p>Cekozz • 88M views • 2 months ago</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img src="Blue Dynamic Fitness YouTube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="5771416d-ceb6-4378-aacc-d75fd5a81380.jpeg">
+            <div>
+        <h4>How to Stay Healthy</h4>
+        <p>Motive Channel • 1M views • 2 days ago</p>
+        </div>
+        </div>
+    </div>
+
+    <div class="video-card">
+        <img src="Blue Ocean Elegant YouTube Banner.png">
+        <div class="video-info">
+            <img class="channel-img" src="WhatsApp Image 2025-08-22 at 18.36.31 (1).jpeg">
+            <div>
+        <h4>Life on the Water</h4>
+        <p>Shado • 100M views • 1 Year ago</p>
+        </div>
+        </div>
+    </div>
+
+
+        <div class="video-card">
+        <img src="Minimal Simple Photography YouTube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="WhatsApp Image 2025-08-22 at 18.39.34.jpeg">
+            <div>
+        <h4>Mobile Photography #beginners</h4>
+        <p>Cekozz • 700k views • 2 weeks ago</p>
+        </div>
+        </div>
+    </div>
+
+        <div class="video-card">
+        <img src="Red Bold News Youtube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="WhatsApp Image 2025-08-22 at 18.36.31 (1).jpeg">
+            <div>
+        <h4>REAL BOLD NEWS #LIVE</h4>
+        <p>Shado • 2K Watching • Live</p>
+        </div>
+        </div>
+    </div>
+
+        <div class="video-card">
+        <img src="Pink Abstract New Year Self Care Youtube Thumbnail Template.png">
+        <div class="video-info">
+            <img class="channel-img" src="WhatsApp Image 2025-08-22 at 18.39.34.jpeg">
+            <div>
+        <h4>Skin Care Routine Tips</h4>
+        <p>Cekozz • 600K views • 20 days ago</p>
+        </div>
+        </div>
+    </div>
+
+        <div class="video-card">
+        <img src="Red Labrador Tutorial YouTube Thumbnail.png">
+        <div class="video-info">
+            <img class="channel-img" src="WhatsApp Image 2025-08-22 at 18.36.31 (1).jpeg">
+            <div>
+        <h4>Easy Trick to Teach Dogs</h4>
+        <p>Shado • 88K views • 15 hours ago</p>
+        </div>
+        </div>
+    </div>
+    </div>
+   </main>
+   </div>
+
+   <footer>
+  <p>© 2025 SHADIL VV. All Rights Reserved.</p>
+  <div class="social-links">
+    <a href="https://github.com/shadilshad" target="_blank">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/shadil-vv-0018b1227/" target="_blank">
+      <i class="fab fa-linkedin"></i>
+    <a href="https://www.instagram.com/sha_dileee" target="_blank">
+      <i class="fab fa-instagram"></i>
+    </a>
+
+    </a>
+  </div>
+</footer>
+
 </body>
 </html>
