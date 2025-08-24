@@ -1,1 +1,3 @@
-window.alert("Welcome to our page  😄");
+"use strict";
+alert("Welcome to our page  😄");
+
