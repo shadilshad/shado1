@@ -31,3 +31,6 @@ else{
     document.getElementById("numb").textContent='C is the biggest number';
 }
 
+
+for(let i=1; i<=10; i++){
+    document.getElementById("numbe").textContent+=`It starts from here ${i}`;}
