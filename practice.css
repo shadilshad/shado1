@@ -1,37 +1,74 @@
 body{
+    background-color: olive;
+    margin: 0%;
+}
+.cent{
     display:flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    background-color: rgb(222, 217, 238);
-    font-family: Arial, sans-serif;
+
+
+}
+form{
+    display: flex;
+    flex-direction: column;
+
+    gap: 10px;
+    padding: 30px;
+    background-color:seagreen;
+    border-radius: 20px;
+    border: 2px solid whitesmoke;
+    box-shadow: 0px 3px 5px rgba(255, 255, 255, 0.94);
+    transition: all 0.3s ease;
+}
+form:hover{
+    box-shadow: 0px 4px 8px rgba(255, 255, 255, 0.94);
+    transform: scale(1.1);
+}
+button{
+    background-color: greenyellow;
+    border-radius: 20px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.94);
+    transition: all 0.3s ease;
+}
+button:hover{
+    box-shadow: 0px 4px 8px rgba(9, 9, 9, 0.94);
+    transform: scale(1.0);
+}
+label{
+    font-size: large;
+    font-family:'Times New Roman', Times, serif;
+    
 }
 input{
     padding: 5px;
-    text-shadow: 2px;
-}
-form{
-    background-color: #fff;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    padding:20px;
     border: 2px solid black;
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
-    border-radius: 20px
-
+    
 }
-form:hover{
-    box-shadow: 0px 3px 9px  rgba(0, 0, 0, 0.7);
-    transform: scale(1.0);
+header{
+    display: flex;
+    justify-content: flex-end;
+    text-align: center;
+    gap: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: rgb(70, 9, 9);
 }
-button{
-    box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.4);
-    transition: all 0.3s ease;
-    background-color: rgb(42, 222, 42);
-    border-radius: 10px
+.menu-item{
+    cursor: pointer;
+    font-weight: bold;
 }
-button:hover{
-    box-shadow: 0px 3px 9px  rgba(0, 0, 0, 0.7);
-    transform: scale(1.0);}
+footer{
+    margin: 0%;
+    padding: 10px 30px;
+    background-color: rgb(70, 9, 9);
+    text-align: center;
+}
+footer p {
+    color: aliceblue;
+}
+footer i{
+    color: aliceblue;
+    cursor: pointer;
+}
