@@ -1,36 +1,25 @@
-let name="shadil", age=21; country= "india";
-console.log(`hello guys, myself i am ${name} and i am ${age} years old. i am a native of ${country}`);
+"use strict"; 
 
-document.getElementById("mydetails").textContent=` hey guys, myself i am ${name} and i am ${age} years old. i am a native of ${country} `
+alert("Hello, world!");
 
+// 2. Variables
+let name = "Shadil";  
+let age = 22;      
+let isStudent = true;
 
-let mathMarks = 60;
-let EnglishMarks = 40;
+console.log(typeof name);     
+console.log(typeof age);       
+console.log(typeof isStudent); 
 
-if(mathMarks >=50 && EnglishMarks >=50){
-    document.getElementById("result").textContent=`PASS`;
-}
-else if(mathMarks <50 && EnglishMarks <50){
-        document.getElementById("result").textContent=`FAIL`;
-}
-else{
-    document.getElementById("result").textContent=`Need Improvement`;
-}
+let userName = prompt("What is your name?");
+let likesJS = confirm("Do you like JavaScript?");
 
 
-let A=21 , B=19, C=15;
-
-if(A>B && A>C){
-    document.getElementById("numb").textContent='A is the biggest number';
-}
-else if(B>C && B>A){
-    document.getElementById("numb").textContent='B is the biggest number';
+let message = "Hello " + userName + "! ";
+if (likesJS) {
+  message += "Glad you like JavaScript 🎉";
+} else {
+  message += "Maybe you will like it later 🙂";
 }
 
-else{
-    document.getElementById("numb").textContent='C is the biggest number';
-}
-
-
-for(let i=1; i<=10; i++){
-    document.getElementById("numbe").textContent+=`It starts from here ${i}`;}
+document.getElementById("output").textContent = message;
