@@ -21,3 +21,22 @@ document.getElementById("number").innerHTML=`Here is the doubled value which is 
 
 console.log("the given input is: "+input);
 console.log("the doubled input is: " + doubled);
+
+
+
+let a= prompt("write number A: ");
+let num1 = Number(a);
+let b= prompt("write number B: ");
+let num2 = Number(b);
+let sum= num1 + num2;
+let sub=num1 - num2;
+let multi=num1 * num2;
+let div=num1/num2;
+let power=num1**num2;
+
+document.getElementById("arithmatic").innerHTML=`here is the arithmatic values: <br>
+So if we add ${a} + ${b}, we get ${sum} <br>
+if we subtract ${a} - ${b}, we get ${sub}<br>
+if we multiply ${a} X ${b}, we get ${multi}<br>
+if we divide ${a} / ${b}, we get ${div}<br>
+and if we use power of ${a} & ${b}, we get ${power}`;
