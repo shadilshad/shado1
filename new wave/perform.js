@@ -40,3 +40,7 @@ if we subtract ${a} - ${b}, we get ${sub}<br>
 if we multiply ${a} X ${b}, we get ${multi}<br>
 if we divide ${a} / ${b}, we get ${div}<br>
 and if we use power of ${a} & ${b}, we get ${power}`;
+
+
+console.log("User's input A= "+ num1);
+console.log("User's input B= "+ num2);
