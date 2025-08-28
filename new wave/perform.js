@@ -44,3 +44,15 @@ and if we use power of ${a} & ${b}, we get ${power}`;
 
 console.log("User's input A= "+ num1);
 console.log("User's input B= "+ num2);
+
+
+let i= 0;
+while(i<=5){
+    console.log("here is the number from 0 to 5 "+i);
+    i++;
+}
+
+let j=0;
+for(i=0; i<=10; i++){
+    console.log("number",+i);
+}
