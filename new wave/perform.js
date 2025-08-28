@@ -56,3 +56,13 @@ let j=0;
 for(i=0; i<=10; i++){
     console.log("number",+i);
 }
+
+
+function generateTable(){
+    let num = document.getElementById("numberinput").value;
+    let output="";
+    for(let i=1; i<=10; i++){
+        output += num + " x " + i + " = " + (num*i) + " <br> ";
+    }
+    document.getElementById("tableoutput").innerHTML=output;
+}
