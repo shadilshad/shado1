@@ -62,16 +62,8 @@ function generateTable(){
     let num = document.getElementById("numberinput").value;
     let output="";
     for(let i=1; i<=10; i++){
-        output += num + " x " + i + " = " + (num*i) + " <br> ";
+        output += "<p>" + num + " x " + i + " = " + (num*i) + " </p>";
     }
     document.getElementById("tableoutput").innerHTML=output;
 }
 
-function table(){
-    let a= document.getElementById("table2").value;
-    let b="";
-    for(let i=1;i<20;1++){
-        b += a + "X" + i + "=" + "</br>"
-    }
-    document.getElementById("table3").innerHTML=b;
-}
