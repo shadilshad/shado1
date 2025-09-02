@@ -36,3 +36,4 @@ function generateTable() {
   document.getElementById("tableOutput").innerHTML = output;
 }
 alert("hey");
+alert("hello");
