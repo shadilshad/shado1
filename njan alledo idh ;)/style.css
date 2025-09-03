@@ -2,22 +2,56 @@ body{
     display: flex;
     justify-content: center;
     height: 100vh;
+    text-align: center;
     align-items: center;
     margin: 0%;
-    background-color: lightgray;
+    background-color: #1E293B;
 }
 .grid{
     display: grid;
     grid-template-columns: repeat(2 ,1fr);
     gap: 50px;
-    text-align: center;
-    padding: 110px;
-    background-color: gray;
+    padding: 60px;
+    background-color: #334155;
     cursor: pointer;
     box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.2);
-    transition: all 0.2 ease;
+    transition: all 0.2s ease;
+    border-radius: 50px;
+    margin-top: 100px;
 }
 .grid:hover{
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.4);
+    transform: scale(1);
+}
+.item{
+    padding: 60px;
+    background-color:#475569;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+.item:hover{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+    transform: scale(1);
+}
+header{
+    position: fixed;
+    top:0;
+    right:0%;
+    left: 0%;
+    background-color:#0F172A;
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px ;
+}
+button{
+    background: #3B82F6;
+    padding: 10px;
+    border-radius: 20px;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease;
+}
+button:hover{
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
     transform: scale(1);
 }
