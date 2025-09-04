@@ -3,12 +3,12 @@
         window.location.href = "academic.html"; 
     });
 
-    document.getElementById("WorkshopBtn").addEventListener("click", function () {
-        window.location.href = "Workshop.html"; 
+    document.getElementById("internshipBtn").addEventListener("click", function () {
+        window.location.href = "internship.html"; 
     });
 
-    document.getElementById("technicalBtn").addEventListener("click", function () {
-        window.location.href = "technical.html";
+    document.getElementById("Workshop").addEventListener("click", function () {
+        window.location.href = "workshop.html";
     });
 
     document.getElementById("otherBtn").addEventListener("click", function () {

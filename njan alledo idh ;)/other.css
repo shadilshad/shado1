@@ -1,0 +1,33 @@
+body{
+    margin: 0%;
+    padding: 40%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100vh;
+    background-color: navy;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(3 ,1fr);
+    gap:20px;
+    padding: 30px;
+    background-color: lightgrey;
+    margin-top: 300px;
+    border-radius: 30px;
+    
+
+}
+.item{
+ box-shadow: 2px 5px 8px rgba(0, 0, 0, 0.2);
+ padding: 20px;
+ background-color: #F9FAFB;
+}
+img{
+    height: 270px;
+    width:350px;
+}
+p{
+    color: #1F2937;
+}
