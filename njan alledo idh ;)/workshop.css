@@ -1,6 +1,6 @@
 body{
-    margin-top: 23%;
-    padding: 50%;
+    margin-top: 0%;
+    padding: 30%;
     display:flex;
     justify-content: center;
     align-items: center;
@@ -30,14 +30,5 @@ img{
 }
 p{
     color: #1F2937;
-}
-button {
-  background-color: #2563eb;   /* bright but professional blue */
-  color: #ffffff;              /* crisp white text */
-  border-radius: 12px;         /* subtle rounded corners */
-  padding: 8px 16px;           /* balanced spacing */
-  border: none;                /* clean outline */
-  cursor: pointer;
-  font-weight: 500;
 }
 
